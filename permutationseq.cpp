@@ -28,16 +28,16 @@ public:
             int t = 0;
             
             if (k != 0) {
-				      f /= (n - i);
-				      t = k / f;
-				      k = k % f;
-			      }
+	    	f /= (n - i);
+	        t = k / f;
+	        k = k % f;
+            }
             
-			s[i] = (char)(((int)'0') + perest[t]);
+	    s[i] = (char)(((int)'0') + perest[t]);
             perest.erase(perest.begin() + t);
-		}
+        }
         
-		return s;
+    return s;
         
     }
 };
